@@ -1,1 +1,1 @@
-python # example.py - quick test with Grok (or swap any model) from hesl.core import protect_llm # Dummy model – replace with real Grok/OpenAI/Claude import later def fake_grok(prompt, kwargs): return f : {prompt.upper()} # Wrap it safe_grok = protect_llm(fake_grok) #
+python from hesl.core import protect_llm # Dummy model – replace with real Grok/OpenAI/Claude import later def fake_grok(prompt, kwargs): return f : {prompt.upper()} # Wrap it safe_grok = protect_llm(fake_grok) #
